@@ -7,6 +7,10 @@ body {
 .bgteks {
   background-color: rgba(255, 255, 255, 0.3);
 }
+.bgtekss {
+  background-color: rgb(189, 181, 181, 0.5);
+  color: navy;
+}
 
 /* Bar Atas */
 .baratas {
@@ -208,3 +212,4 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
   margin: 20px;
 }
+
