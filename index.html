@@ -1,109 +1,286 @@
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUHAMMAD RAFIF IZZUDDIN</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        .judul {
+        body {
+            font-family: 'Lato', sans-serif;
             margin: 0;
-            padding: 10px;
-            margin-top: 5%;
+            padding: 0;
         }
-        .rafifjpg {
-            width: 20%;
-            margin: 20px;
-            border-radius: 10px;
-            margin-top: 5%;
+        .bgteks {
+            background-color: rgba(255, 255, 255, 0.3);
         }
-        .kontainerprofil {
+        .baratas {
             display: flex;
-            align-items: flex-start;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: grey;
+            padding: 10px;
+            gap: 10px;
+        }
+        .baratas img,
+        .baratas a {
+            width: 30px;
+        }
+        .judulatas {
+            flex: 1 1 100%;
+            text-align: center;
+            color: white;
+        }
+        .pencarian {
+            flex: 1;
+            min-width: 150px;
+            height: 30px;
+        }
+        .menu-dropdown {
+            position: absolute;
+            top: 70px;
+            left: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            z-index: 1000;
+        }
+        .menu-dropdown ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-dropdown li {
+            margin: 8px 0;
+        }
+        .menu-dropdown a {
+            text-decoration: none;
+            color: #333;
+        }
+        .menu-dropdown a:hover {
+            color: #007BFF;
+        }
+
+        .kontainerberanda,
+        .kontainerprofil,
+        .containerperjalanan {
+            background-size: cover;
+            background-position: center;
             padding: 20px;
         }
-        .teksprofil {
-            max-width: 70%;
-            margin-top: 3%;
+        .kontainerberanda {
+            background-image: url('images/backgroundsurabaya.jpg');
         }
-        h3 {
-            margin-top: 0;
+        .kontainerprofil {
+            background-image: url('images/backgroundtuban.jpg');
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
         }
+        .containerperjalanan {
+            background-image: url('images/backgroundrengel1.jpg');
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+        .revisi, .rafifjpg, .motor {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .fotoberanda, .kontainerprofil, .containerperjalanan {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .keterangan, .teksprofil, .innerperjalanan {
+            flex: 1;
+            min-width: 250px;
+        }
+        .judulberanda, .judul, .judulperjalanan, .judulkontak {
+            font-size: 2rem;
+            margin: 10px 0;
+        }
+        .kontakbox {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 10px;
+        }
+        .info-kontak, .sosmed-kontak {
+            flex: 1;
+            min-width: 250px;
+        }
+        .tentang {
+            padding: 20px;
+            background-color: #fdfdfd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        .tombolperjalanan {
+            padding: 10px 25px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 999px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        @media screen and (max-width: 768px) {
+            .judulberanda, .judulperjalanan, .judulkontak {
+                font-size: 1.5rem;
+            }
+            .baratas {
+                justify-content: center;
+            }
+            .baratas img,
+            .baratas a {
+                width: 25px;
+            }
+            .pencarian {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+
+        .baratas {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* agar tersebar di bar */
+        padding: 10px;
+        background-color: grey;
+        flex-wrap: nowrap; /* agar tidak wrap */
+        gap: 15px;
+        }
+
+        .logo-group,
+        .icon-group {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        }
+
+        .pencarian {
+        flex-grow: 1; /* mengambil sisa ruang */
+        max-width: 300px;
+        height: 35px;
+        padding: 5px 10px;
+        border-radius: 6px;
+        border: none;
+        font-size: 16px;
+        }
+
+        .logo-group img,
+        .icon-group img {
+        height: 45px;
+        width: auto;
+        cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+        .baratas {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .pencarian {
+            flex-grow: 1;
+            max-width: 100%;
+            margin: 5px 0;
+        }
+
+        .logo-group img,
+        .icon-group img {
+            height: 30px;
+        }
+        }
+
+
+
+        .logo-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-group img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  display: block;
+}
+.searchbar {
+    display: flex; align-items: center; gap: 5px;
+}
+.cari {
+    height: 40px;
+    width: 40px;
+}
     </style>
 </head>
 <body>
-  <div class="baratas">
-        <img class="logo" src="images/menu.png" onclick="toggleMenu()">
-            <a href="https://www.instagram.com/m.rafifizzuddin?igsh=MTdpOHZmZmd3aDFsag==">
-        <img class= "logoig" src="images/logoig.png">
-            </a>
-            <a href="http://wa.me/6285156568679">
-        <img class="logowa" src="images/logowa.png">
-            </a>
-        <img class="logolink" src="images/link.png" >
+    <!-- Bar Atas -->
+    <div class="baratas">
+        <div class="logo-group">
+            <img class="logo" src="images/menu.png" onclick="toggleMenu()">
+            <a href="https://www.instagram.com/m.rafifizzuddin"><img class="logoig" src="images/logoig.png"></a>
+            <a href="http://wa.me/6285156568679"><img class="logowa" src="images/logowa.png"></a>
+            <img class="logolink" src="images/link.png">
+        </div>
 
-        <h1 class="center judulatas">MUHAMMAD RAFIF IZZUDDIN</h1>
-        <input placeholder="masukkan pencarian"class="pencarian">
-        <img class="logosearch" src="images/search.png">
-        <img class="sharelogo" src="images/sharelogo.svg">
-        <img class="logoabout" src="images/logoabout.png">
-  </div>
+        <div class="searchbar">
+        <input placeholder="masukkan pencarian" class="pencarian">
+        <img class="cari" src="images/search.png" alt="Search Icon">
+        </div>
 
+        <div class="icon-group">
+            <img class="sharelogo" src="images/sharelogo.svg" alt="Share Icon">
+            <img class="logoabout" src="images/logoabout.png" alt="About Icon">
+        </div>
+    </div>
+
+
+    <!-- Menu Dropdown -->
     <div id="menuDropdown" class="menu-dropdown" style="display: none;">
         <ul>
             <li><a href="#beranda">Beranda</a></li>
             <li><a href="#profil">Profil</a></li>
-            <li><a href="#jejakperjalananku">jejak Perjalananku</a></li>
+            <li><a href="#jejakperjalananku">Jejak Perjalanan</a></li>
             <li><a href="#kontak">Kontak</a></li>
             <li><a href="#tentang">Tentang</a></li>
         </ul>
     </div>
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById("menuDropdown");
-            menu.style.display = menu.style.display === "none" ? "block" : "none";
-        }
 
-        // Opsional: Klik di luar menu untuk menutup
-        window.addEventListener("click", function (e) {
-            const menu = document.getElementById("menuDropdown");
-            const logo = document.querySelector(".logo");
-            if (!menu.contains(e.target) && !logo.contains(e.target)) {
-            menu.style.display = "none";
-            }
-        });
-    </script>
-
-  <div class="halamanutama">
-
-<!-- Bagian Beranda -->
-    <div id="beranda"class="kontainerberanda">
-        <h1 class="judulberanda"><span style="background-color: rgba(255, 255, 255, 0.3);">BERANDA</span> </h1>
+    <!-- Beranda -->
+    <div id="beranda" class="kontainerberanda">
+        <h1 class="judulberanda"><span class="bgteks">BERANDA</span></h1>
         <div class="fotoberanda">
-             <img class="revisi" src="images/rafif.jpg" alt="Foto Rafif">
-                <div class="keterangan">
-                    <h2 class="judulisiberanda"><span style="background-color: rgba(255, 255, 255, 0.3);">M RAFIF IZZUDDIN</span></h2>
-                    <h3><span style="background-color: rgba(255, 255, 255, 0.3);">Programmer | Photographer | TECH Enthusiast</span></h3>
-                    <br>
-                    <p> <span style="backdrop-filter: blur(5px);
-                        background-color: rgba(255, 255, 255, 0.3);">
-                        Halo! Saya Rafif, pelajar asal Bojonegoro yang memiliki minat besar di bidang teknologi, desain web, dan multimedia.
-                        <br>Saya suka belajar hal baru dan membuat karya digital yang bermanfaat. </span>
-                    </p>
-                </div>
+            <img class="revisi" src="images/rafif.jpg" alt="Foto Rafif">
+            <div class="keterangan">
+                <h2 class="judulisiberanda"><span class="bgteks">M RAFIF IZZUDDIN</span></h2>
+                <h3><span class="bgteks">Programmer | Photographer | TECH Enthusiast</span></h3>
+                <p><span class="bgteks">Halo! Saya Rafif, pelajar asal Bojonegoro yang memiliki minat besar di bidang teknologi, desain web, dan multimedia. Saya suka belajar hal baru dan membuat karya digital yang bermanfaat.</span></p>
+            </div>
         </div>
     </div>
 
-<!-- Bagian Profil -->
+    <!-- Profil -->
     <div id="profil" class="kontainerprofil">
         <img class="rafifjpg" src="images/rafifselfie.jpg" alt="Foto Rafif">
         <div class="teksprofil">
-            <h1 class="judul"><span class="bgteks">
-                MUHAMMAD RAFIF IZZUDDIN
-                </span>
-            </h1>
-            <br>
-            <h3> <span class="bgteks">
-                🧑‍💼 Tentang Saya
-                </span>
-            </h3>
+            <h1 class="judul bgteks">MUHAMMAD RAFIF IZZUDDIN</h1>
+            <h3 class="bgteks">🧑‍💼 Tentang Saya</h3>
             <p class="bgteks">
                 <strong>Lengkap:</strong> Muhammad Rafif Izzuddin<br>
                 <strong>Nama Panggilan:</strong> Rafif<br>
@@ -112,71 +289,68 @@
                 <strong>Kewarganegaraan:</strong> Indonesia<br>
                 <strong>Status:</strong> Belum Menikah<br>
                 <strong>Agama:</strong> Islam<br>
-                <strong>Alamat Domisili:</strong> JL. Meliwis Putih No.8 Ngrowo Bojonegoro<br>
+                <strong>Alamat:</strong> JL. Meliwis Putih No.8 Ngrowo Bojonegoro<br>
                 <strong>Email:</strong> rafif.yohana@gmail.com<br>
                 <strong>No. HP / WhatsApp:</strong> 0851-5656-8679<br>
-                <strong>Website / Portofolio:</strong> www.johndoe.com
+                <strong>Website:</strong> www.johndoe.com
             </p>
         </div>
     </div>
 
-
-<!-- Bagian Perjalanan-->
-    <div id="jejakperjalananku" class="containerperjalanan" >
+    <!-- Jejak Perjalanan -->
+    <div id="jejakperjalananku" class="containerperjalanan">
         <img class="motor" src="images/motor.jpg">
         <div class="innerperjalanan">
-            <h2  class="judulperjalanan bgteks" >
-                AYO IKUTI PERJALANANKU 🏍️
-            </h2>
-            <p class="keteranganperjalanan">
-                <span class="bgteks">
-                Perjalanan bukan hanya soal destinasi, <br> tapi juga tentang pengalaman yang membentuk siapa kita. <br> <br>Lewat halaman ini, aku ingin berbagi potongan kisah <br> dari berbagai tempat yang telah kulalui <br> pegunungan yang sunyi sampai pantai yang ramai."
-                </span>
+            <h2 class="judulperjalanan bgteks">AYO IKUTI PERJALANANKU 🏍️</h2>
+            <p class="keteranganperjalanan bgteks">
+                Perjalanan bukan hanya soal destinasi, tapi juga tentang pengalaman yang membentuk siapa kita. Lewat halaman ini, aku ingin berbagi potongan kisah dari berbagai tempat yang telah kulalui, dari pegunungan yang sunyi sampai pantai yang ramai.
             </p>
-            <a class="tombolprj" href="html/perjalanan.html" >
-                <button class="tombolperjalanan" >Ikuti Perjalananku</button>
+            <a class="tombolprj" href="html/perjalanan.html">
+                <button class="tombolperjalanan">Ikuti Perjalananku</button>
             </a>
         </div>
     </div>
 
-
-
-
-   <h1 id="kontak"><span class="judulkontak">KONTAK SAYA</span></h1>
-
-<div class="kontakbox">
-    <div class="info-kontak">
-    <h3>📞 Hubungi Saya</h3>
-    <p>
-      ✉️ <strong>Email:</strong> rafif.yohana@gmail.com<br>
-      📱 <strong>WhatsApp:</strong> 0851-5656-8679<br>
-      📍 <strong>Domisili:</strong> Bojonegoro, Jawa Timur
-    </p>
-    </div>
-
+    <!-- Kontak -->
+    <h1 id="kontak" class="judulkontak">KONTAK SAYA</h1>
+    <div class="kontakbox">
+        <div class="info-kontak">
+            <h3>📞 Hubungi Saya</h3>
+            <p>
+                ✉️ <strong>Email:</strong> rafif.yohana@gmail.com<br>
+                📱 <strong>WhatsApp:</strong> 0851-5656-8679<br>
+                📍 <strong>Domisili:</strong> Bojonegoro, Jawa Timur
+            </p>
+        </div>
         <div class="sosmed-kontak">
-            <h3>🌐 Temui Saya di Media Sosial</h3>
+            <h3>🌐 Media Sosial</h3>
             <ul>
-            <li>📸 Instagram: <a href="https://instagram.com/rafif_izz" target="_blank">@rafif_izz</a></li>
-            <li>🔗 LinkedIn: <a href="https://linkedin.com/in/rafif" target="_blank">linkedin.com/in/rafif</a></li>
-            <li>▶️ YouTube: <a href="#" target="_blank">Rafif Channel</a></li>
+                <li>📸 Instagram: <a href="https://instagram.com/rafif_izz" target="_blank">@rafif_izz</a></li>
+                <li>🔗 LinkedIn: <a href="https://linkedin.com/in/rafif" target="_blank">linkedin.com/in/rafif</a></li>
+                <li>▶️ YouTube: <a href="#" target="_blank">Rafif Channel</a></li>
             </ul>
         </div>
     </div>
-    <br>
-    <h1><span id="tentang" class="judul">TENTANG SAYA</span></h1>
-        <p class="tentang">
-        Halo! Saya <strong>Muhammad Rafif Izzuddin</strong>, seorang pelajar SMA dari <strong>SMAN 4 Bojonegoro</strong> yang antusias dengan dunia <em>teknologi</em> dan <em>petualangan</em>. Saya aktif mengikuti <strong>Olimpiade Sains Nasional</strong> dan senang mengeksplorasi berbagai hal baru, terutama yang berkaitan dengan dunia digital. <br><br>
 
-        Minat saya mencakup <strong>fotografi</strong>, <strong>teknologi</strong>, <strong>pemrograman</strong>, serta <strong>berpetualang</strong> ke tempat-tempat baru. Bagi saya, teknologi bukan sekadar alat, tapi juga sarana untuk menciptakan perubahan yang bermakna. <br><br>
+    <!-- Tentang Saya -->
+    <h1 id="tentang" class="judul">TENTANG SAYA</h1>
+    <p class="tentang">
+        Halo! Saya <strong>Muhammad Rafif Izzuddin</strong>, pelajar SMA dari <strong>SMAN 4 Bojonegoro</strong> yang antusias dalam dunia teknologi dan petualangan. Saya aktif dalam <strong>Olimpiade Sains Nasional</strong> dan senang mengeksplorasi hal-hal baru. Minat saya mencakup fotografi, teknologi, pemrograman, dan berpetualang. <br><br>
+        Saya percaya teknologi bisa membantu banyak orang. Tujuan saya adalah menjadikan teknologi solusi yang mendukung kehidupan manusia. Pengalaman saya termasuk membuat <em>website pertemanan</em> dan mewakili sekolah di <strong>SMA Awards</strong> bidang <em>fotografi</em>.
+    </p>
 
-        Saya percaya bahwa teknologi bisa membantu banyak orang dan mempermudah aktivitas sehari-hari. Tujuan saya adalah memastikan bahwa teknologi selalu hadir sebagai solusi yang mendukung kehidupan manusia. <br><br>
-
-        Pengalaman saya antara lain pernah membuat <em>website pertemanan</em> untuk teman-teman SMA saya, serta mewakili <strong>SMAN 4 Bojonegoro</strong> dalam ajang <strong>SMA Awards</strong> bidang <em>fotografi</em>. <br><br>
-
-        “<em>Saya suka menjelajah tempat baru dan memotret momen sederhana.</em>” Bagi saya, setiap petualangan adalah cerita, dan setiap gambar adalah kenangan.
-        </p>
-
-  </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menuDropdown");
+            menu.style.display = menu.style.display === "none" ? "block" : "none";
+        }
+        window.addEventListener("click", function (e) {
+            const menu = document.getElementById("menuDropdown");
+            const logo = document.querySelector(".logo");
+            if (!menu.contains(e.target) && !logo.contains(e.target)) {
+                menu.style.display = "none";
+            }
+        });
+    </script>
 </body>
 </html>
