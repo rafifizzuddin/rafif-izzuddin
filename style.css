@@ -1,0 +1,241 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+.bgteks {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.rafifjpg {
+    width: 20%;
+    margin-left: 20px;
+    margin-top: 200px;
+}
+.revisi {
+  margin: 40px;
+  border-radius: 10px;
+  width: 20%;
+}
+.kontainerprofil {
+    display: flex;
+    align-items: center;
+    background-image: url('images/backgroundtuban.jpg');
+    background-size: cover;
+    height: 80%;
+}
+.kontainerbiodata {
+    display: grid;
+}
+.center {
+    text-align: center;
+    align-items: center;
+}
+.logo {
+    width: 50px;
+    margin-left: 1%;
+}
+.logowa {
+  width: 100%;
+  margin-left: 0.4%;
+}
+.logolink {
+    width: 2.5%;
+    margin-left : 0.4%;
+    border: solid 2px;
+    border-radius: 50%;
+    padding: 3px;
+}
+.baratas {
+  display: flex;
+  align-items: center;
+  background-color: grey;
+}
+.judulatas {
+  margin-left: 1.5%;
+}
+.pencarian {
+  margin-left: 20px;
+  height: 30px;
+  width: 250px;
+}
+.logosearch {
+  width: 30px;
+  margin-left: 1%;
+}
+.logoabout {
+}
+.halamanutama {
+  background-image: url('imges/backgroundphoto.jpg');
+  background-size: cover;
+}
+.sharelogo {
+  margin-left: 10%;
+  width: 3%;
+}
+.logoabout {
+  width: 3%;
+  margin-left: 1%;
+}
+.menu-dropdown {
+  position: absolute;
+  top: 70px; /* Sesuaikan dengan posisi logo */
+  left: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.menu-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-dropdown li {
+  margin: 8px 0;
+}
+
+.menu-dropdown a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-dropdown a:hover {
+  color: #007BFF;
+}
+.logoig {
+  width: 100%;
+}
+a {
+  width: 3.5%;
+}
+.judulberanda {
+  margin-left: 7%;
+  margin-bottom: 0px;
+
+}
+.kontainerberanda {
+display: grid;
+background-image: url('images/backgroundsurabaya.jpg');
+background-size: cover;
+height: 150%%;
+}
+.keterangan {
+      flex: 1;
+      text-align: left;
+}
+.fotoberanda {
+  display: flex;
+}
+.judulisiberanda {
+  margin-top: 20%;
+  margin-bottom: 0%;
+}
+
+ /* PERJALANAN */
+
+.containerperjalanan {
+ background-image: url('images/backgroundrengel1.jpg');
+ background-size: cover;
+ display: flex;
+ height: 100%;
+}
+.innerperjalanan {
+  margin-left: 2%;
+}
+.judulperjalanan {
+  margin: 3%;
+  margin-top: 30%;
+}
+.motor {
+  width: 20%;
+  height: fit-content;
+  margin-left: 3%;
+  margin-top: 10%;
+  border-radius: 3%;
+  margin-bottom: 3%;
+  align-items: center;
+}
+.keteranganperjalanan {
+  margin-left: 3%;
+  margin-top: 10%;
+}
+.teksperjalanan {
+  margin-top: 50%;
+}
+.tombolperjalanan {
+  margin-left: 20%;
+  margin-top: 3.5%;
+  padding: 10px 25px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 999px; /* Ini yang bikin bentuk kapsul */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.tombolprj {
+  
+}
+
+
+.judulkontak {
+  color: white;
+  background-color: grey;
+  margin-left: 0%;
+  margin-bottom: 0px;
+  line-height: 1.8;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  font-size: 34px;
+}
+.isikontak {
+  margin-left: 3%;
+  font-size: 100%;
+}
+.kontakbox {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.info-kontak, .sosmed-kontak {
+  flex: 1;
+  min-width: 250px;
+}
+
+.kontakbox h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.kontakbox p, .kontakbox li {
+  font-size: 16px;
+  color: #444;
+}
+
+.kontakbox a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.kontakbox a:hover {
+  text-decoration: underline;
+}
+
+.tentang {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  background-color: #fdfdfd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+

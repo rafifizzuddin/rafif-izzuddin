@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="body">
+
+            <!-- BAR ATAS -->
+
+            <div class="baratas">
+                 <img class="logo" src="../images/menu.png" onclick="toggleMenu()">
+                    <a href="https://www.instagram.com/m.rafifizzuddin?igsh=MTdpOHZmZmd3aDFsag==">
+                <img class= "logoig" src="../images/logoig.png">
+                    </a>
+                    <a href="http://wa.me/6285156568679">
+                <img class="logowa" src="../images/logowa.png">
+                    </a>
+                <img class="logolink" src="../images/link.png" >
+
+                <h1 class="center judulatas">MUHAMMAD RAFIF IZZUDDIN</h1>
+                <input placeholder="masukkan pencarian"class="pencarian">
+                <img class="logosearch" src="../images/search.png">
+                <img class="sharelogo" src="../images/sharelogo.svg">
+                <img class="logoabout" src="../images/logoabout.png">
+            </div>
+
+            <div id="menuDropdown" class="menu-dropdown" style="display: none;">
+                <ul>
+                    <li><a href="../index.html"> Kembali ke Beranda</a></li>
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#jejakperjalananku">jejak Perjalananku</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                </ul>
+            </div>
+
+            <script>
+                function toggleMenu() {
+                    const menu = document.getElementById("menuDropdown");
+                    menu.style.display = menu.style.display === "none" ? "block" : "none";
+                }
+
+                // Opsional: Klik di luar menu untuk menutup
+                window.addEventListener("click", function (e) {
+                    const menu = document.getElementById("menuDropdown");
+                    const logo = document.querySelector(".logo");
+                    if (!menu.contains(e.target) && !logo.contains(e.target)) {
+                    menu.style.display = "none";
+                    }
+                });
+            </script>
+
+            <!-- BERANDA -->
+
+            <div class="beranda">
+                    <h1 class="judulberanda">
+                        DESTINASI WISATA
+                    </h1>
+                    <img class="maps" src="images/maps.png">
+            </div>
+
+            <!-- BOJONEGORO -->
+
+            <div class="containerbjn">
+                <div class="overlaybjn"></div> <!-- Gelap sedikit agar teks terlihat -->
+  
+                    <div class="contentbjn">
+                        <img class="logobjn" src="images/logobjn.png" alt="Logo Bojonegoro">
+                        
+                        <h1 class="judulbjn">BOJONEGORO 📍🗺️</h1>
+                        
+                        <p class="keteranganbjn">
+                        Bojonegoro bukan hanya dikenal dengan minyak dan pertaniannya,<br>
+                        tapi juga menyimpan pesona wisata alam dan budaya yang unik.<br>
+                        Dari hutan jati yang sejuk, aliran Bengawan Solo yang legendaris, hingga tradisi lokal yang kaya cerita — semuanya bisa kamu temukan di sini.<br><br>
+                        Yuk, jelajahi berbagai destinasi menarik di Bojonegoro dan temukan keindahan yang mungkin belum banyak orang tahu!
+                        </p>
+                        <button class="tombolbjn"> JELAJAHI BOJONEGORO</button>
+                    </div>
+                </div>
+            </div>
+            
+           <!-- TUBAN -->
+
+            <div class="containerbjn bgtbn">
+                <div class="overlaybjn"></div> <!-- Gelap sedikit agar teks terlihat -->
+  
+                    <div class="contentbjn">
+                        <img class="logobjn" src="images/logotbn.png" alt="Logo Tuban">
+                        
+                        <h1 class="judulbjn">TUBAN 📍🗺️</h1>
+                        
+                        <p class="keteranganbjn">
+                            Tuban, kota kecil di pesisir utara Jawa Timur, menyimpan keindahan alam dan sejarah yang luar biasa.
+                            Dari gua eksotis, pantai berpasir, hingga situs religi yang penuh makna—Tuban menawarkan pengalaman wisata yang menyenangkan.
+                            <br><br>
+                            Ayo telusuri jejak pesona Tuban dan temukan keajaiban yang menantimu!
+                        </p>
+                        <button class="tombolbjn"> JELAJAHI TUBAN</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SURABAYA -->
+
+            <div class="containerbjn bgsby">
+                <div class="overlaybjn"></div> <!-- Gelap sedikit agar teks terlihat -->
+  
+                    <div class="contentbjn">
+                        <img class="logobjn" src="images/logosby.png" alt="Logo Tuban">
+                        
+                        <h1 class="judulbjn">SURABAYA 📍🗺️</h1>
+                        
+                        <p class="keteranganbjn">
+                            Sebagai kota terbesar kedua di Indonesia, Surabaya menyuguhkan perpaduan unik antara modernitas dan sejarah.<br>
+                            Mulai dari gedung pencakar langit, taman kota yang ramah keluarga, hingga jejak perjuangan kemerdekaan—semuanya ada di sini.
+                            <br><br>
+                            Yuk, jelajahi keindahan dan semangat “Kota Pahlawan” yang tak pernah padam!
+                        </p>
+                        <button class="tombolbjn"> JELAJAHI SURABAYA</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </body>
+</html>

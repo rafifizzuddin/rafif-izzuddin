@@ -1,0 +1,178 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+.bgteks {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.kontainerprofil {
+    display: flex;
+    align-items: center;
+    background-image: url('images/backgroundtuban.jpg');
+    background-size: cover;
+    height: 80%;
+}
+.logo {
+    width: 50px;
+    margin-left: 1%;
+}
+.logowa {
+  width: 100%;
+  margin-left: 0.4%;
+}
+.logolink {
+    width: 2.5%;
+    margin-left : 0.4%;
+    border: solid 2px;
+    border-radius: 50%;
+    padding: 3px;
+}
+.baratas {
+  display: flex;
+  align-items: center;
+  background-color: grey;
+}
+.judulatas {
+  margin-left: 1.5%;
+}
+.pencarian {
+  margin-left: 20px;
+  height: 30px;
+  width: 250px;
+}
+.logosearch {
+  width: 30px;
+  margin-left: 1%;
+}
+.logoabout {
+}
+.sharelogo {
+  margin-left: 10%;
+  width: 3%;
+}
+.logoabout {
+  width: 3%;
+  margin-left: 1%;
+}
+.menu-dropdown {
+  position: absolute;
+  top: 70px; /* Sesuaikan dengan posisi logo */
+  left: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.menu-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-dropdown li {
+  margin: 8px 0;
+}
+
+.menu-dropdown a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-dropdown a:hover {
+  color: #007BFF;
+}
+.logoig {
+  width: 100%;
+}
+a {
+  width: 3.5%;
+}
+
+
+/* BAGIAN BERANDA */
+.beranda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+}
+.judulberanda {
+    color: blue;
+}
+.maps {
+    width: 2%;
+    height: 2%;
+}
+
+/* BOJONEGORO*/
+
+.containerbjn {
+    position: relative;
+    background-image: url('images/bgbjn.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.overlaybjn {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay hitam transparan */
+    z-index: 1;
+}
+
+.contentbjn {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.logobjn {
+    width: 120px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.judulbjn {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.keteranganbjn {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+.tombolbjn {
+    padding: 15px 20px;
+    border-radius: 999px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+/* TUBAN */
+
+.bgtbn {
+    background-image: url('images/bgtbn.webp');
+}
+
+/* SURABAYA */
+
+.bgsby {
+    background-image: url('images/bgsby.webp');
+}
+

@@ -1,0 +1,182 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>MUHAMMAD RAFIF IZZUDDIN</title>
+    <style>
+        .judul {
+            margin: 0;
+            padding: 10px;
+            margin-top: 5%;
+        }
+        .rafifjpg {
+            width: 20%;
+            margin: 20px;
+            border-radius: 10px;
+            margin-top: 5%;
+        }
+        .kontainerprofil {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        .teksprofil {
+            max-width: 70%;
+            margin-top: 3%;
+        }
+        h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+  <div class="baratas">
+        <img class="logo" src="images/menu.png" onclick="toggleMenu()">
+            <a href="https://www.instagram.com/m.rafifizzuddin?igsh=MTdpOHZmZmd3aDFsag==">
+        <img class= "logoig" src="images/logoig.png">
+            </a>
+            <a href="http://wa.me/6285156568679">
+        <img class="logowa" src="images/logowa.png">
+            </a>
+        <img class="logolink" src="images/link.png" >
+
+        <h1 class="center judulatas">MUHAMMAD RAFIF IZZUDDIN</h1>
+        <input placeholder="masukkan pencarian"class="pencarian">
+        <img class="logosearch" src="images/search.png">
+        <img class="sharelogo" src="images/sharelogo.svg">
+        <img class="logoabout" src="images/logoabout.png">
+  </div>
+
+    <div id="menuDropdown" class="menu-dropdown" style="display: none;">
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#jejakperjalananku">jejak Perjalananku</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menuDropdown");
+            menu.style.display = menu.style.display === "none" ? "block" : "none";
+        }
+
+        // Opsional: Klik di luar menu untuk menutup
+        window.addEventListener("click", function (e) {
+            const menu = document.getElementById("menuDropdown");
+            const logo = document.querySelector(".logo");
+            if (!menu.contains(e.target) && !logo.contains(e.target)) {
+            menu.style.display = "none";
+            }
+        });
+    </script>
+
+  <div class="halamanutama">
+
+<!-- Bagian Beranda -->
+    <div id="beranda"class="kontainerberanda">
+        <h1 class="judulberanda"><span style="background-color: rgba(255, 255, 255, 0.3);">BERANDA</span> </h1>
+        <div class="fotoberanda">
+             <img class="revisi" src="images/rafif.jpg" alt="Foto Rafif">
+                <div class="keterangan">
+                    <h2 class="judulisiberanda"><span style="background-color: rgba(255, 255, 255, 0.3);">M RAFIF IZZUDDIN</span></h2>
+                    <h3><span style="background-color: rgba(255, 255, 255, 0.3);">Programmer | Photographer | TECH Enthusiast</span></h3>
+                    <br>
+                    <p> <span style="backdrop-filter: blur(5px);
+                        background-color: rgba(255, 255, 255, 0.3);">
+                        Halo! Saya Rafif, pelajar asal Bojonegoro yang memiliki minat besar di bidang teknologi, desain web, dan multimedia.
+                        <br>Saya suka belajar hal baru dan membuat karya digital yang bermanfaat. </span>
+                    </p>
+                </div>
+        </div>
+    </div>
+
+<!-- Bagian Profil -->
+    <div id="profil" class="kontainerprofil">
+        <img class="rafifjpg" src="images/rafifselfie.jpg" alt="Foto Rafif">
+        <div class="teksprofil">
+            <h1 class="judul"><span class="bgteks">
+                MUHAMMAD RAFIF IZZUDDIN
+                </span>
+            </h1>
+            <br>
+            <h3> <span class="bgteks">
+                🧑‍💼 Tentang Saya
+                </span>
+            </h3>
+            <p class="bgteks">
+                <strong>Lengkap:</strong> Muhammad Rafif Izzuddin<br>
+                <strong>Nama Panggilan:</strong> Rafif<br>
+                <strong>Tempat, Tanggal Lahir:</strong> Bojonegoro, 14 November 2007<br>
+                <strong>Jenis Kelamin:</strong> Laki-laki<br>
+                <strong>Kewarganegaraan:</strong> Indonesia<br>
+                <strong>Status:</strong> Belum Menikah<br>
+                <strong>Agama:</strong> Islam<br>
+                <strong>Alamat Domisili:</strong> JL. Meliwis Putih No.8 Ngrowo Bojonegoro<br>
+                <strong>Email:</strong> rafif.yohana@gmail.com<br>
+                <strong>No. HP / WhatsApp:</strong> 0851-5656-8679<br>
+                <strong>Website / Portofolio:</strong> www.johndoe.com
+            </p>
+        </div>
+    </div>
+
+
+<!-- Bagian Perjalanan-->
+    <div id="jejakperjalananku" class="containerperjalanan" >
+        <img class="motor" src="images/motor.jpg">
+        <div class="innerperjalanan">
+            <h2  class="judulperjalanan bgteks" >
+                AYO IKUTI PERJALANANKU 🏍️
+            </h2>
+            <p class="keteranganperjalanan">
+                <span class="bgteks">
+                Perjalanan bukan hanya soal destinasi, <br> tapi juga tentang pengalaman yang membentuk siapa kita. <br> <br>Lewat halaman ini, aku ingin berbagi potongan kisah <br> dari berbagai tempat yang telah kulalui <br> pegunungan yang sunyi sampai pantai yang ramai."
+                </span>
+            </p>
+            <a class="tombolprj" href="html/perjalanan.html" >
+                <button class="tombolperjalanan" >Ikuti Perjalananku</button>
+            </a>
+        </div>
+    </div>
+
+
+
+
+   <h1 id="kontak"><span class="judulkontak">KONTAK SAYA</span></h1>
+
+<div class="kontakbox">
+    <div class="info-kontak">
+    <h3>📞 Hubungi Saya</h3>
+    <p>
+      ✉️ <strong>Email:</strong> rafif.yohana@gmail.com<br>
+      📱 <strong>WhatsApp:</strong> 0851-5656-8679<br>
+      📍 <strong>Domisili:</strong> Bojonegoro, Jawa Timur
+    </p>
+    </div>
+
+        <div class="sosmed-kontak">
+            <h3>🌐 Temui Saya di Media Sosial</h3>
+            <ul>
+            <li>📸 Instagram: <a href="https://instagram.com/rafif_izz" target="_blank">@rafif_izz</a></li>
+            <li>🔗 LinkedIn: <a href="https://linkedin.com/in/rafif" target="_blank">linkedin.com/in/rafif</a></li>
+            <li>▶️ YouTube: <a href="#" target="_blank">Rafif Channel</a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <h1><span id="tentang" class="judul">TENTANG SAYA</span></h1>
+        <p class="tentang">
+        Halo! Saya <strong>Muhammad Rafif Izzuddin</strong>, seorang pelajar SMA dari <strong>SMAN 4 Bojonegoro</strong> yang antusias dengan dunia <em>teknologi</em> dan <em>petualangan</em>. Saya aktif mengikuti <strong>Olimpiade Sains Nasional</strong> dan senang mengeksplorasi berbagai hal baru, terutama yang berkaitan dengan dunia digital. <br><br>
+
+        Minat saya mencakup <strong>fotografi</strong>, <strong>teknologi</strong>, <strong>pemrograman</strong>, serta <strong>berpetualang</strong> ke tempat-tempat baru. Bagi saya, teknologi bukan sekadar alat, tapi juga sarana untuk menciptakan perubahan yang bermakna. <br><br>
+
+        Saya percaya bahwa teknologi bisa membantu banyak orang dan mempermudah aktivitas sehari-hari. Tujuan saya adalah memastikan bahwa teknologi selalu hadir sebagai solusi yang mendukung kehidupan manusia. <br><br>
+
+        Pengalaman saya antara lain pernah membuat <em>website pertemanan</em> untuk teman-teman SMA saya, serta mewakili <strong>SMAN 4 Bojonegoro</strong> dalam ajang <strong>SMA Awards</strong> bidang <em>fotografi</em>. <br><br>
+
+        “<em>Saya suka menjelajah tempat baru dan memotret momen sederhana.</em>” Bagi saya, setiap petualangan adalah cerita, dan setiap gambar adalah kenangan.
+        </p>
+
+  </div>
+</body>
+</html>
